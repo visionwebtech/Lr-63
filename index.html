@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LR-63 — We Build Attention. We Build Brands.</title>
+<meta name="description" content="LR-63 is a creative social media marketing, advertising, performance marketing and AI agency. Creative + Advertising + Performance + AI Technology.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%23050508"/><text x="32" y="43" font-family="Arial Black, Arial" font-size="24" fill="%2338bdf8" text-anchor="middle" font-weight="900">LR</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ CINEMATIC INTRO ============ -->
+<div id="intro" aria-hidden="true">
+  <canvas id="particleCanvas"></canvas>
+  <div class="intro-vignette"></div>
+  <div class="intro-burst"></div>
+  <div class="intro-skip" id="introSkip">SKIP INTRO <span>→</span></div>
+</div>
+
+<!-- ============ CURTAIN REVEAL ============ -->
+<div id="curtain" aria-hidden="true">
+  <div class="curtain-rod"></div>
+  <div class="curtain-panel left"><span class="fold"></span></div>
+  <div class="curtain-panel right"><span class="fold"></span></div>
+  <svg class="rope left" viewBox="0 0 120 400" preserveAspectRatio="none">
+    <path d="M60 0 C 30 120, 96 260, 74 396" stroke="#c9b8f2" stroke-width="3" fill="none" opacity="0.85"/>
+    <circle cx="74" cy="396" r="6" fill="#a78bfa"/>
+  </svg>
+  <svg class="rope right" viewBox="0 0 120 400" preserveAspectRatio="none">
+    <path d="M60 0 C 90 120, 24 260, 46 396" stroke="#c9b8f2" stroke-width="3" fill="none" opacity="0.85"/>
+    <circle cx="46" cy="396" r="6" fill="#a78bfa"/>
+  </svg>
+  <div class="stage-figure left"></div>
+  <div class="stage-figure right"></div>
+  <div class="welcome-wrap">
+    <div class="welcome-kicker">THE CURTAIN RISES</div>
+    <h2 class="welcome-title" id="welcomeTitle">WELCOME TO <span class="grad">LR-63</span></h2>
+  </div>
+</div>
+
+<!-- ============ CURSOR LIGHT ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#hero">LR<span class="grad">-63</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#platforms">Ads</a>
+    <a href="#work">Work</a>
+    <a href="#ai">AI</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-primary nav-cta" href="#contact">START A PROJECT</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#platforms">Ads</a>
+    <a href="#work">Work</a>
+    <a href="#ai">AI</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <canvas id="hero3d"></canvas>
+  <div class="hero-fallback"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <p class="hero-kicker" id="hk">CREATIVE SOCIAL MEDIA MARKETING <span>•</span> PERFORMANCE ADVERTISING <span>•</span> AI TECHNOLOGIES</p>
+    <h1 class="hero-title" id="ht">
+      <span class="line">WE BUILD <em>ATTENTION</em>.</span>
+      <span class="line">WE BUILD <em class="grad">BRANDS</em>.</span>
+    </h1>
+    <p class="hero-sub" id="hs">Creative marketing, performance advertising and AI-powered solutions built to make brands impossible to ignore.</p>
+    <div class="hero-ctas" id="hc">
+      <a href="#work" class="btn btn-primary">EXPLORE OUR WORK</a>
+      <a href="#contact" class="btn btn-ghost">LET'S BUILD SOMETHING</a>
+    </div>
+    <div class="hero-floats" id="hf">
+      <span class="hf-chip c1">META ADS</span>
+      <span class="hf-chip c2">GOOGLE ADS</span>
+      <span class="hf-chip c3">HOTSTAR ADS</span>
+      <span class="hf-chip c4">AI AGENTS</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint" id="scrollHint"><span>SCROLL</span><div class="mouse"><i></i></div></div>
+</section>
+
+<!-- marquee -->
+<div class="marquee"><div class="marquee-track" id="mq1"></div></div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">01 — ABOUT LR-63</span>
+      <h2>CREATIVITY MEETS <span class="grad">TECHNOLOGY</span>.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="lead">LR-63 is not a normal marketing agency. We are a <strong>creative studio, a performance engine and an AI company</strong> fused into one team.</p>
+        <p>We blend creative strategy, social media and advertising craft with performance marketing discipline and AI-powered automation — so every campaign is built to look brilliant <em>and</em> to convert.</p>
+        <ul class="about-chips">
+          <li>Creative Strategy</li><li>Social Media</li><li>Performance Marketing</li><li>Advertising</li><li>AI &amp; Automation</li><li>Digital Brand Growth</li>
+        </ul>
+      </div>
+      <div class="about-visual reveal" id="aboutVisual">
+        <img src="assets/img/about-ai.jpg" alt="LR-63 creative AI engine visual" loading="lazy" decoding="async">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="core-label"><span class="dot"></span> CREATIVE × AI ENGINE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">02 — WHAT WE DO</span>
+      <h2>FULL-STACK <span class="grad">GROWTH</span>, END TO END.</h2>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-creative-social.jpg" alt="Creative social media marketing" loading="lazy" decoding="async"><span class="svc-num">01</span></div>
+        <div class="svc-body">
+          <h3>CREATIVE SOCIAL MEDIA MARKETING</h3>
+          <p>Scroll-stopping reels, creatives and campaign visuals engineered to hold attention.</p>
+          <div class="svc-tags"><span>Reels &amp; Shorts</span><span>Campaign Creatives</span><span>Content Design</span><span>Visual Identity</span></div>
+        </div>
+      </article>
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-social.jpg" alt="Social media marketing" loading="lazy" decoding="async"><span class="svc-num">02</span></div>
+        <div class="svc-body">
+          <h3>SOCIAL MEDIA MARKETING</h3>
+          <p>Content strategy, audience growth and a social presence that compounds daily.</p>
+          <div class="svc-tags"><span>Content Strategy</span><span>Audience Growth</span><span>Community</span><span>Brand Presence</span></div>
+        </div>
+      </article>
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-meta.jpg" alt="Meta Ads advertising" loading="lazy" decoding="async"><span class="svc-num">03</span></div>
+        <div class="svc-body">
+          <h3>META ADS</h3>
+          <p>Instagram + Facebook campaigns that turn creative into conversions.</p>
+          <div class="svc-tags"><span>Instagram Ads</span><span>Facebook Ads</span><span>Retargeting</span><span>Optimisation</span></div>
+        </div>
+      </article>
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-google.jpg" alt="Google Ads advertising" loading="lazy" decoding="async"><span class="svc-num">04</span></div>
+        <div class="svc-body">
+          <h3>GOOGLE ADS</h3>
+          <p>Search, display and YouTube ads that capture demand at the right moment.</p>
+          <div class="svc-tags"><span>Search Ads</span><span>Display Ads</span><span>YouTube Ads</span><span>Performance Max</span></div>
+        </div>
+      </article>
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-hotstar.jpg" alt="Hotstar OTT advertising" loading="lazy" decoding="async"><span class="svc-num">05</span></div>
+        <div class="svc-body">
+          <h3>HOTSTAR ADS</h3>
+          <p>Premium OTT advertising that puts your brand on the biggest screens in India.</p>
+          <div class="svc-tags"><span>OTT Campaigns</span><span>Brand Takeovers</span><span>Programmatic</span><span>Premium Reach</span></div>
+        </div>
+      </article>
+
+      <article class="svc-card tilt reveal">
+        <div class="svc-media"><img src="assets/img/svc-ai-agents.jpg" alt="AI agents and automation" loading="lazy" decoding="async"><span class="svc-num">06</span></div>
+        <div class="svc-body">
+          <h3>AI AGENTS</h3>
+          <p>Futuristic AI automation, workflows and digital agents that work 24/7.</p>
+          <div class="svc-tags"><span>AI Workflows</span><span>Chat Automation</span><span>Lead Agents</span><span>Business Automation</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ AD PLATFORMS ============ -->
+<section id="platforms">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">03 — ADVERTISING</span>
+      <h2>DOMINATE EVERY <span class="grad">SCREEN</span>.</h2>
+    </div>
+
+    <div class="plat-row reveal">
+      <div class="plat-media tilt"><img src="assets/img/meta-ads.jpg" alt="Meta ads campaign creative" loading="lazy" decoding="async"><div class="plat-shine"></div><span class="plat-tag">INSTAGRAM + FACEBOOK</span></div>
+      <div class="plat-copy">
+        <span class="kicker">META ADS</span>
+        <h3>Attention that converts on the feeds people scroll every day.</h3>
+        <p>Creative-led Meta campaigns — reels, stories, feed and retargeting — tuned for engagement, leads and sales.</p>
+        <div class="svc-tags"><span>Reels</span><span>Stories</span><span>Feed Ads</span><span>Retargeting</span><span>Lookalikes</span></div>
+      </div>
+    </div>
+
+    <div class="plat-row flip reveal">
+      <div class="plat-media tilt"><img src="assets/img/google-ads.jpg" alt="Google ads search and display" loading="lazy" decoding="async"><div class="plat-shine"></div><span class="plat-tag">SEARCH + DISPLAY + YOUTUBE</span></div>
+      <div class="plat-copy">
+        <span class="kicker">GOOGLE ADS</span>
+        <h3>Capture demand the moment it exists.</h3>
+        <p>Search, display and YouTube campaigns built on intent data, creative testing and relentless optimisation.</p>
+        <div class="svc-tags"><span>Search Ads</span><span>Display</span><span>YouTube</span><span>Performance Max</span><span>Shopping</span></div>
+      </div>
+    </div>
+
+    <div class="plat-row reveal">
+      <div class="plat-media tilt"><img src="assets/img/hotstar-ads.jpg" alt="Hotstar OTT advertising" loading="lazy" decoding="async"><div class="plat-shine"></div><span class="plat-tag">PREMIUM OTT ADVERTISING</span></div>
+      <div class="plat-copy">
+        <span class="kicker">HOTSTAR ADS</span>
+        <h3>Cinema-scale reach on India's biggest streaming stage.</h3>
+        <p>Premium OTT campaigns, brand takeovers and programmatic placements that dominate living rooms during prime time.</p>
+        <div class="svc-tags"><span>OTT Campaigns</span><span>Brand Takeover</span><span>Programmatic</span><span>Mass Reach</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- marquee -->
+<div class="marquee"><div class="marquee-track" id="mq2"></div></div>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">04 — SELECTED WORK</span>
+      <h2>IDEAS THAT DON'T JUST LOOK GOOD. <span class="grad">THEY PERFORM.</span></h2>
+      <p class="sec-note">Concept campaigns from the LR-63 creative lab — replace with your own live work.</p>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <figure class="work-item c7 tilt reveal" data-tilt="8">
+        <img src="assets/img/port-fashion.jpg" alt="Noir Atelier fashion campaign" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">META ADS</span><h3>NOIR ATELIER</h3><p>Fashion Campaign — Always-On Social</p></figcaption>
+      </figure>
+
+      <figure class="work-item c5 tilt reveal" data-tilt="8">
+        <img src="assets/img/port-tech.jpg" alt="Volt Edge product launch" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">360° LAUNCH</span><h3>VOLT EDGE</h3><p>Tech Product Launch — Full Funnel</p></figcaption>
+      </figure>
+
+      <figure class="work-item c4 tall tilt reveal" data-tilt="9">
+        <img src="assets/img/port-beverage.jpg" alt="Aqua Luxe beverage campaign" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">SOCIAL</span><h3>AQUA LUXE</h3><p>Beverage — Creator & Reels Push</p></figcaption>
+      </figure>
+
+      <figure class="work-item c4 tall tilt reveal" data-tilt="9">
+        <img src="assets/img/port-watch.jpg" alt="Meridian watch launch" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">GOOGLE ADS</span><h3>MERIDIAN</h3><p>Luxury Watch — Search + Display</p></figcaption>
+      </figure>
+
+      <figure class="work-item c4 tall tilt reveal" data-tilt="9">
+        <img src="assets/img/port-perfume.jpg" alt="Essence Noir fragrance campaign" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">OTT + SOCIAL</span><h3>ESSENCE NOIR</h3><p>Fragrance — Premium Storytelling</p></figcaption>
+      </figure>
+
+      <figure class="work-item c7 tilt reveal" data-tilt="8">
+        <img src="assets/img/port-auto.jpg" alt="Velocity GT automotive campaign" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">YOUTUBE + DISPLAY</span><h3>VELOCITY GT</h3><p>Automotive — Cinematic Campaign</p></figcaption>
+      </figure>
+
+      <figure class="work-item c5 tilt reveal" data-tilt="8">
+        <img src="assets/img/port-sneaker.jpg" alt="Hyperstep sneaker drop" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">META REELS</span><h3>HYPERSTEP</h3><p>Sneaker Drop — Hype Launch</p></figcaption>
+      </figure>
+
+      <figure class="work-item c5 tall tilt reveal" data-tilt="9">
+        <img src="assets/img/port-city.jpg" alt="Nexus City smart city campaign" loading="lazy" decoding="async">
+        <figcaption><span class="wcat">HOTSTAR OTT</span><h3>NEXUS CITY</h3><p>Smart City — Cinema-Scale Reach</p></figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="stats">
+  <div class="container">
+    <!-- Example metrics — easy to edit: change the data-count / data-suffix values -->
+    <div class="stats-grid reveal">
+      <div class="stat"><b data-count="100" data-suffix="+">0</b><span>CAMPAIGNS</span></div>
+      <div class="stat"><b data-count="50" data-suffix="+">0</b><span>BRANDS</span></div>
+      <div class="stat"><b data-count="25" data-suffix="M+">0</b><span>IMPRESSIONS</span></div>
+      <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>AI-POWERED SOLUTIONS</span></div>
+    </div>
+    <p class="stats-note">Editable example metrics — swap in your own numbers.</p>
+  </div>
+</section>
+
+<!-- ============ AI AGENTS ============ -->
+<section id="ai">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">05 — AI AGENTS</span>
+      <h2>DON'T JUST AUTOMATE TASKS. <span class="grad">BUILD AI EMPLOYEES.</span></h2>
+    </div>
+
+    <div class="ai-grid">
+      <div class="ai-visual reveal" id="aiVisual">
+        <img src="assets/img/ai-core.jpg" alt="LR-63 futuristic AI core" loading="lazy" decoding="async">
+        <div class="pulse-ring r1"></div>
+        <div class="pulse-ring r2"></div>
+        <div class="pulse-ring r3"></div>
+        <div class="core-label"><span class="dot"></span> LR-63 AI CORE — ONLINE 24/7</div>
+      </div>
+      <div class="ai-copy reveal">
+        <p class="lead">We build AI agents that help businesses automate <strong>conversations, workflows, support and repetitive operations</strong>.</p>
+        <p>Every agent connects to your real tools — chat, CRM, sales, analytics — and keeps working while your team sleeps.</p>
+        <ul class="ai-list">
+          <li><span>01</span> Sales Agents that qualify and book</li>
+          <li><span>02</span> Support Agents that resolve in seconds</li>
+          <li><span>03</span> Lead Agents on WhatsApp that never sleep</li>
+          <li><span>04</span> Workflow Automation across your stack</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="net-wrap reveal" id="netWrap">
+      <svg class="net-svg" id="netSvg" preserveAspectRatio="none"></svg>
+      <div class="net-core" id="netCore">
+        <span class="core-ring"></span><span class="core-ring r2"></span>
+        <b>AI CORE</b><small>LR-63</small>
+      </div>
+      <div class="net-node" data-label="SALES"><i class="n-ico"></i>Sales</div>
+      <div class="net-node" data-label="SUPPORT"><i class="n-ico"></i>Support</div>
+      <div class="net-node" data-label="LEADS"><i class="n-ico"></i>Lead Gen</div>
+      <div class="net-node" data-label="WHATSAPP"><i class="n-ico"></i>WhatsApp</div>
+      <div class="net-node" data-label="CRM"><i class="n-ico"></i>CRM</div>
+      <div class="net-node" data-label="ANALYTICS"><i class="n-ico"></i>Analytics</div>
+      <div class="net-node" data-label="AUTOMATION"><i class="n-ico"></i>Automation</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-dust" id="ctaDust"></div>
+  <div class="cta-content reveal">
+    <span class="kicker">LET'S BUILD</span>
+    <h2>READY TO MAKE YOUR BRAND <span class="grad">IMPOSSIBLE TO IGNORE</span>?</h2>
+    <p>Let's turn your next idea into something people remember.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn btn-primary">START A PROJECT</a>
+      <a href="#work" class="btn btn-ghost">VIEW OUR WORK</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="nav-logo" href="#hero">LR<span class="grad">-63</span></a>
+        <p>Creative Marketing • Performance Advertising • AI</p>
+        <a class="mail" href="mailto:hello@lr63.studio">hello@lr63.studio</a>
+      </div>
+      <div class="foot-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#ai">AI</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="foot-social">
+        <span>SOCIAL MEDIA</span>
+        <a href="#" rel="noopener">Instagram ↗</a>
+        <a href="#" rel="noopener">LinkedIn ↗</a>
+        <a href="#" rel="noopener">X / Twitter ↗</a>
+        <a href="#" rel="noopener">YouTube ↗</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 LR-63. All rights reserved.</span>
+      <span>WE BUILD ATTENTION. WE BUILD BRANDS.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
